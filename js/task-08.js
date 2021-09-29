@@ -26,7 +26,7 @@ function onFormSubmit(event) {
     inputNodeArr.forEach((elNode) => {
       formObj[elNode.name] = elNode.value;
     });
+    console.log("formObj", formObj);
   }
-  console.log("formObj", formObj);
   event.currentTarget.reset();
 }
